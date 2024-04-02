@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
         .battery-top {
             width: 30px;
             height: 10px;
@@ -62,5 +68,12 @@
             <div class="charge"></div> <!-- Moved charge element inside battery-content -->
         </div>
     </div>
+    <p>Loading...</p>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = './payment.html';
+        }, 6000); // Redirect after 6 seconds
+    </script>
 </body>
 </html>
